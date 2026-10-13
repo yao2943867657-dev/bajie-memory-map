@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>八戒的取经回忆地图</title><meta name="description" content="点开一站，翻开一段取经回忆。一个可以换成自己人生故事的小网站。"><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>八戒的取经回忆地图</title><meta name="description" content="点开一站，翻开一段取经回忆。一个可以换成自己人生故事的小网站。"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="storybook.css"></head>
 <body>
-<header><a class="brand" href="#">八戒的旅行手帐</a><button id="share">分享这段旅程</button></header>
+<header><a class="brand" href="#">八戒的旅行手帐</a><nav><a href="steps.html">跟猴哥做一个</a><button id="share">分享这段旅程</button></nav></header>
 <main>
-<section class="intro"><div><p class="small">一路向西，也一路长大</p><h1>走过的路，<br>都藏着一个故事。</h1><p class="lead">我是八戒。取经这一路，走过山，见过火，<br>也终于学会：有些路，要和朋友一起走。</p><a class="start" href="#journey">翻开我的取经回忆 <span>↓</span></a></div><div class="cover"><span class="stamp">西行回忆录</span><div class="cover-art" id="coverArt"></div><p>四段回忆 · 一路同行</p></div></section>
+<section class="intro"><div><p class="small">跟着八戒，重逛四段西游故事</p><h1>俺老猪的<br>西行冒险簿。</h1><p class="lead">从高老庄出发，遇上白骨精，分不清两个猴哥，<br>再去火焰山借一阵风。点开地图，听俺慢慢说。</p><a class="start" href="#journey">翻开我的取经回忆 <span>↓</span></a></div><div class="cover"><span class="stamp">西行回忆录</span><div class="cover-art" id="coverArt"></div><p>四段回忆 · 一路同行</p></div></section>
 <section id="journey" class="journey"><div class="section-head"><div><p class="small">点击路上的圆点，看看那时的我</p><h2>我的西行小地图</h2></div><p id="count">第一站 / 共四站</p></div>
-<div class="map" aria-label="取经回忆路线，示意地图"><svg class="landscape" viewBox="0 0 1100 380" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="1100" height="380" fill="#e5f0ed"/><circle cx="928" cy="72" r="40" fill="#f5ce62"/><path d="M0 230L140 76 259 231 376 119 509 265 651 90 805 250 965 137 1100 225V380H0Z" fill="#bacdc5"/><path d="M0 299Q155 202 288 285T551 273T812 254T1100 282V380H0Z" fill="#96b4a2"/><path d="M0 345Q154 280 279 328T576 332T817 306T1100 327V380H0Z" fill="#779783"/><path d="M90 262C174 140 286 306 378 234S580 130 632 230 820 319 986 166" fill="none" stroke="#f9f5de" stroke-width="14" stroke-linecap="round"/><path d="M90 262C174 140 286 306 378 234S580 130 632 230 820 319 986 166" fill="none" stroke="#8d7654" stroke-width="2" stroke-dasharray="5 9"/></svg><div id="pins"></div><span class="map-note">回忆路线示意</span></div>
-<div class="memory"><div class="picture"><img id="storyImage" alt=""><span id="caption"></span></div><article aria-live="polite"><p class="small" id="chapter"></p><h3 id="storyTitle"></h3><p id="storyText"></p><p class="thought" id="thought"></p><div class="turn"><button id="prev" aria-label="上一站">← 上一站</button><button id="next" aria-label="下一站">下一站 →</button></div></article></div>
+<div class="map-scroll"><div class="map" aria-label="取经回忆路线，示意地图"><img class="landscape story-map" src="images/map-v2.webp" alt="高老庄、白虎岭、云间辨真与火焰山的手绘西游地图"><div id="pins"></div><span class="map-note">故事地点示意 · 非地理导航</span></div></div><p class="mobile-hint">左右滑动地图，点开路上的故事</p>
+<div class="memory"><div class="picture"><img id="storyImage" alt=""><span id="caption"></span></div><article aria-live="polite"><p class="small" id="chapter"></p><h3 id="storyTitle"></h3><p id="storyText"></p><p class="thought" id="thought"></p><a id="sourceLink" target="_blank" rel="noopener">翻翻这段原著</a><div class="turn"><button id="prev" aria-label="上一站">← 上一站</button><button id="next" aria-label="下一站">下一站 →</button></div></article></div>
 </section>
-<section class="ending"><span>✦</span><h2>你的故事，也值得有一张地图。</h2><p>一次旅行、孩子的成长、小猫的第一年……<br>把四个地点、四张照片、四段回忆，换成你的。</p><a href="README.md">查看复刻说明</a></section>
-</main><footer>八戒的取经回忆 · 西游故事创意改编</footer><p id="status" role="status"></p>
+<section class="ending"><span>✦</span><h2>你的故事，也值得有一张地图。</h2><p>一次旅行、孩子的成长、小猫的第一年……<br>把四个地点、四张照片、四段回忆，换成你的。</p><a href="steps.html">五步做出你自己的故事网站</a></section>
+</main><footer>八戒的取经回忆 · 原著故事改编 · Codex原创插画</footer><p id="status" role="status"></p>
 <script src="data.js"></script><script src="app.js"></script>
 </body></html>
